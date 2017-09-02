@@ -3,7 +3,6 @@
 #include<iostream>
 #include<cstdlib>
 #include<cstdio>
-using namespace std;
 int main()
 {
 	int *ptr;
@@ -11,7 +10,7 @@ int main()
 
 	if(!ptr)
 	{
-		cout << "Memory Allocation Failed";
+		std::cout << "Memory Allocation Failed"<<std::endl;
 		exit(1);
 	}
 	
