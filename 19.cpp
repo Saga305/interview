@@ -24,7 +24,8 @@ class Array {
 	void operator<<(int shift) {
 		if(!shift)
 			return;
-		shift= shift % (strlen(a)-1);
+		shift= shift % (strlen(a));
+		std::cout<<" shift = "<<shift<<std::endl;
 		while(shift)
 		{
 			char last = a[strlen(a) -1];
@@ -42,9 +43,12 @@ class Array {
 int main()
 {
 	Array a;
-	a.set((char*)"ajay");
-	a<<2;
-	std::cout<<" String = "<<a.get()<<std::endl;
+	for(int i = 1; i <10; i ++)
+	{
+		a.set((char*)"Saga");
+		a<<i;
+		std::cout<<" String = "<<" << "<<i<<" "<<a.get()<<std::endl;
+	}
 
 
 }
