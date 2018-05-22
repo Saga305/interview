@@ -5,7 +5,7 @@ int a[] = {10,9,8,7,6,5,11};
 
 int partition(int l,int h)
 {
-    int pivot = a[l];
+    int pivot = a[(l+h)/2];
     int i = l;
     int j = h;
     do
